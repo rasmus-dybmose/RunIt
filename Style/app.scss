@@ -1,0 +1,172 @@
+﻿@import url('foundation.css');
+
+html, body {
+    h4 {
+        margin-bottom: 0;
+    }
+}
+
+.rest {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.ct {
+    div {
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.black {
+    background-color: #2c2c2c;
+    color: white;
+
+    .btn {
+        border-color: white;
+    }
+}
+
+.white {
+    background-color: white;
+    color: #2c2c2c;
+}
+
+nav {
+    color: white !important;
+    background-color: #CB4047;
+    font-weight: 700;
+
+    .navtxtbox {
+        background-color: #CB4047;
+        border-color: #2c2c2c;
+    }
+
+    .navbtn {
+        color: #CB4047;
+    }
+
+    div {
+        display: inline-block;
+
+        p {
+            display: inline-block;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.frame {
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    background-color: #CB4047;
+    color: white;
+}
+
+.spon {
+    img {
+        width: 200px;
+        border: 1px solid #2c2c2c;
+    }
+
+    .guldimg {
+        width: 300px;
+    }
+}
+
+.sponimg {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+main {
+    background-image: url('../img/Events/FOREST to THE BAY.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    section {
+        margin-top: 25px;
+
+        div {
+
+            .kontakt img {
+                height: 300px;
+                border: 1px solid #2c2c2c;
+            }
+
+            .event {
+                background-color: #f1f1f1;
+                padding: 0;
+                min-height: 425px;
+
+                .eventtxt {
+                    overflow: hidden;
+                    max-height: 180px;
+                    min-height: 180px;
+                }
+
+                img {
+                    width: 312.86px;
+                    height: 125px !important;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.eventbyid {
+    margin-top: 0;
+
+    div {
+    }
+}
+
+.padding {
+    padding: 10px;
+    min-height: 0;
+
+    a {
+        margin-bottom: 0;
+    }
+}
+
+.margin {
+    margin: 30px;
+}
+
+.kontaktbtn {
+    background-color: #CB4047;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+aside {
+
+    .btn {
+        width: 100%;
+    }
+
+    .asidetxtbox {
+        margin-bottom: 0;
+        color: #CB4047;
+    }
+}
+
+footer {
+    height: 90px;
+    padding: 10px;
+    padding-right: 125px !important;
+}

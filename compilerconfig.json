@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Style/app.css",
+    "inputFile": "Style/app.scss"
+  },
+  {
+    "outputFile": "Admin/Style/App.css",
+    "inputFile": "Admin/Style/App.scss"
+  }
+]

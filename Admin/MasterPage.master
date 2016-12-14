@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUN'IT - ADMIN</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Style/foundation.css" />
+    <link href="/Admin/Style/app.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row small-12 large-12">
+
+            <nav class="small-12 large-1 black">
+                <ul class="menu vertical">
+                    <li class="columns"><b>Opret/Update/Slet</b><hr /></li>
+                    <li><a href="/OpretEvent"><i class="fa fa-calendar" aria-hidden="true"></i><b>Event</b></a></li>
+                    <li><a href="/OpretSponsorer"><i class="fa fa-building" aria-hidden="true"></i><b>Sponsorer</b></a></li>
+                    <li><a href="/OpretOmRunIt"><i class="fa fa-code" aria-hidden="true"></i><b>Om Run'It</b></a></li>
+                    <li><a href="/OpretKontakt"><i class="fa fa-user" aria-hidden="true"></i><b>Kontakt</b></a></li>
+                    <li class="columns"><b>Medlem admin</b><hr /></li>
+                    <li><a href="/OpretBruger">Opret Bruger</a></li>
+                </ul>
+            </nav>
+            <section class="small-12 large-12 row">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </section>
+            <aside></aside>
+            <footer></footer>
+
+        </div>
+    </form>
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/vendor/what-input.min.js"></script>
+    <script src="../js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
