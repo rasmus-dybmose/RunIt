@@ -49,6 +49,8 @@
         routes.MapPageRoute("login", "login", "~/Login.aspx");
         routes.MapPageRoute("PasswordReset", "PasswordReset", "~/PasswordReset.aspx");
         routes.MapPageRoute("Reset", "Reset", "~/Reset.aspx");
+        routes.MapPageRoute("Opret-Bruger", "Opret-Bruger", "~/OpretBruger.aspx");
+
 
         //ADMIN SIDERNE
         routes.MapPageRoute("Admin", "Admin", "~/Admin/Default.aspx");

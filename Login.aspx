@@ -57,6 +57,7 @@
                     </td>
                 </tr>
             </table>
+            <asp:HyperLink NavigateUrl="/Opret-Bruger" Text="Sign Up" runat="server" /><br />
             <asp:HyperLink NavigateUrl="/PasswordReset" Text="Kan du ikke huske dit password?" runat="server" />
         </asp:Panel>
     </div>
