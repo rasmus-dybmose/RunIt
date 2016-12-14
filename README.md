@@ -7,4 +7,4 @@ Hjemme siden virker fint dog kan man ikke tilmelde sig til nyhedsbreve da jeg ha
 så for at få det til at virke skal man lige ind og selv putte sin egen email og kode ind.
 
 admin delen virker også.
-opret dig og se kig dig omkring.
+opret dig og kig dig omkring.
