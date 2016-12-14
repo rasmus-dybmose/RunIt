@@ -83,7 +83,7 @@ public class Userfac
         // Henter først brugerens "salt"-værdi (Hvis brugeren eksisterer)
 
         bool UserExist = false;
-        cmd = new SqlCommand("SELECT fldSalt FROM tblUsers WHERE fldUserName = @username");
+        cmd = new SqlCommand("SELECT fldSalt FROM tblUsers WHERE fldEmail = @username");
         cmd.Parameters.AddWithValue("@username", UserName);
         if (DA.GetData(cmd).Rows.Count > 0)
         {
@@ -92,7 +92,7 @@ public class Userfac
             kryptering objKryptering = new kryptering();
             string salt = DA.GetData(cmd).Rows[0]["fldSalt"].ToString();
             // Opbygger SQL sætning med det indtastede password og "Salt-"værdi. Det hashes først
-            cmd = new SqlCommand("SELECT * FROM tblUsers WHERE fldUserName = @username AND fldPassword = @password");
+            cmd = new SqlCommand("SELECT * FROM tblUsers WHERE fldEmail = @username AND fldPassword = @password");
             cmd.Parameters.AddWithValue("@username", UserName);
             cmd.Parameters.AddWithValue("@password", objKryptering.HashPassword(Password, salt));
             if (DA.GetData(cmd).Rows.Count > 0)
