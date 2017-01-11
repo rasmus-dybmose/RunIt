@@ -14,7 +14,7 @@ public partial class Admin_Reset : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-        if (!string.IsNullOrEmpty(Request.QueryString["id"]) && !string.IsNullOrEmpty(Request.QueryString["id"]))
+        if (!string.IsNullOrEmpty(Request.QueryString["id"]) && !string.IsNullOrEmpty(Request.QueryString["date"]))
         {
             if (objUsers.UserString(Request.QueryString["id"], Convert.ToDateTime(Request.QueryString["date"])))
             {
